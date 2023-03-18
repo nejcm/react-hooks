@@ -1,0 +1,11 @@
+node_modules/
+static/
+types/
+dist/
+build/
+coverage/
+config/
+stories/
+*.d.ts
+*.config.*
+.eslintrc.*
