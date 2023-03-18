@@ -28,7 +28,12 @@
     "typeRoots": ["node_modules/@types"],
     "types": ["jest", "@testing-library/jest-dom", "node"]
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "types", "**/*.test.*"],
+  "include": ["src", "node_modules/@nejcm/configs/src/global.d.ts"],
+  "exclude": [
+    "node_modules/(?!@nejcm/configs)",
+    "dist",
+    "types",
+    "**/*.test.*"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
